@@ -21,13 +21,13 @@ body {
 }
 
 main {
-    position: relative;
+    position: relative; /* Será deslocado, mas ainda ocupará seu espaço original, afetando a disposção dos outros elementos*/
     height: 100vh;
     
 }
 
 section#telefone {
-    position: absolute;
+    position: absolute; /*Será posicionado de forma independente e não afetará a disposição dos outros elementos*/ 
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -40,9 +40,28 @@ section#telefone {
 
 iframe#tela {
     position: relative; /* posição relativa para usar o modelo de onde vai ficar o iframe usando top e left nesse caso*/
-
     top: 80px;
     left: 22px;
-    width: 269px;
+
+    width: 269px; /* Ajuste no tamanho para encaixar no celular */
     height: 471px;
+}
+
+section#redessociais { 
+    text-align: right;  /* Alinhar a esquerda menus*/ 
+
+}
+
+section#redessociais > a > img {
+    width: 50px;
+    margin: 10px;
+    border-radius: 50%; /*deixar img redonda*/
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.801) ;
+    box-sizing: border-box;
+}
+
+section#redessociais img:hover {
+    border: 2px solid rgba(255, 255, 255, 0.555);
+    transform: translate(-3px, -3px);
+    transition: transform 0.5s;
 }
