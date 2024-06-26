@@ -43,7 +43,7 @@ iframe#tela {
     top: 80px;
     left: 22px;
 
-    width: 269px; /* Ajuste no tamanho para encaixar no celular */
+    width: 267px; /* Ajuste no tamanho para encaixar no celular */
     height: 471px;
 }
 
@@ -56,12 +56,12 @@ section#redessociais > a > img {
     width: 50px;
     margin: 10px;
     border-radius: 50%; /*deixar img redonda*/
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.801) ;
-    box-sizing: border-box;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.801) ; /* sombra por baixo*/
+    box-sizing: border-box; /* */
 }
 
 section#redessociais img:hover {
     border: 2px solid rgba(255, 255, 255, 0.555);
-    transform: translate(-3px, -3px);
-    transition: transform 0.5s;
+    transform: translate(-3px, -3px); /* levantar o botão*/
+    transition: transform 0.5s; /* Movimentação de forma suave*/
 }

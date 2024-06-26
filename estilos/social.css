@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+}
+
+img {
+    width: 100vw; /*100% do tamanho da view port*/ 
+    
+
+}
+
+a {
+    display: block; /* Mostrar o ACESSE embaixo do conteudo*/
+    background-color: darkred;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-weight: bolder; /* Grossura da letra*/
+    text-decoration: none; /* Tirar linha de acesso em bixo */ 
+
+}
+a:hover {
+    background-color: red;
+}
